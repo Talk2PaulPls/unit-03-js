@@ -1,0 +1,32 @@
+<body>
+    <h1> Lesson 01 - JS ❤️ HTML</h1>
+
+    <p id="myParagraph">
+        This a paragraph, it has some text.
+    </p>
+    <button id="button1">Simple Sytle</button>
+    <button id="button2">Old Sytle</button>
+    <button id="button3">Crazy Style </button>
+
+    <script>
+        let myParagraph = document.getElementById("myParagraph");
+
+        myParagraph.innerText = 'This is a brand new text';
+
+        myParagraph.style.color = 'Green';
+        myParagraph.style.fontWeight = 'Bold';
+        
+        document.body.style.backgroundColor = 'Cyan';
+
+        
+        document.getElementById("button1").addEventListener("click", function() {
+            alert("Button 1 clicked!");
+        });
+        document.getElementById("button2").addEventListener("click", function() {
+            alert("Button 2 clicked!");
+        });
+        document.getElementById("button3").addEventListener("click", function() {
+            alert("Button 3 clicked!");
+        });
+    </script>
+</body>
